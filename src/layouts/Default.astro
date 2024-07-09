@@ -1,9 +1,9 @@
 ---
 import BaseHeader from "../components/BaseHeader.astro";
 import BaseFooter from "../components/BaseFooter.astro";
-import '@fontsource-variable/inter/index.css';
+import "@fontsource-variable/inter";
+import "@fontsource/plus-jakarta-sans";
 import "../styles/global.css";
-
 ---
 
 <html lang="en">
@@ -15,7 +15,7 @@ import "../styles/global.css";
     <link rel="sitemap" href="/sitemap-index.xml" />
     <slot name="seo" />
   </head>
-  <body class="bg-[#efefef]">
+  <body class="bg-[#efefef] font-sans">
     <main class="max-w-screen-2xl mx-auto bg-white">
       <BaseHeader />
       <slot />
