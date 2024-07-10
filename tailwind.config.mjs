@@ -9,6 +9,13 @@ export default {
         sans: ['Inter', 'Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
         jakarta: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
       },
+      fontWeight: {
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extrabold: '900',
+      },
       colors: {
           light: "#fff",
           dark: "#333333",
