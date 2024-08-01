@@ -27,15 +27,15 @@ const { title, description, image } = Astro.props;
   <div
     class="p-8 md:p-0 md:absolute md:max-w-md lg:max-w-xl md:top-28 md:left-12 lg:top-44 lg:left-56"
   >
-    <h1
-      class="font-title font-bold text-4xl sm:text-6xl mb-8 xl:text-7xl 2xl:text-8xl"
-    >
-      {title.split("your")[0]}
-      <span class="text-primary">your</span>
-      {title.split("your")[1]}
-    </h1>
-    <p v-if="description" class="text-xl">
-      {description}
-    </p>
+  <h1 class="font-title font-bold text-4xl sm:text-6xl mb-8 xl:text-7xl 2xl:text-8xl">
+    {title === "rediscover your skin" ? "redescubra" : title.split("sua")[0]}
+    <span class="text-primary">sua</span>
+    {title === "rediscover your skin" ? "pele" : title.split("sua")[1]}
+  </h1>
+  <p v-if="description" class="text-xl">
+    {description === "skncre offers the best of the best, just for your skin." 
+      ? "skncre oferece o melhor do melhor, só para a sua pele."
+      : description}
+  </p>
   </div>
 </section>
