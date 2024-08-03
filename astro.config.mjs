@@ -15,4 +15,9 @@ export default defineConfig({
   image: {
     domains: ["media.graphassets.com"],
   },
+  vite: {
+    define: {
+      'process.env.HYGRAPH_ENDPOINT': JSON.stringify(process.env.HYGRAPH_ENDPOINT),
+    },
+  },
 });
